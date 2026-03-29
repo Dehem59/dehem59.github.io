@@ -17,7 +17,7 @@
     <link rel="canonical" href="https://dehem59.github.io">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -38,8 +38,8 @@
             --glass: rgba(26, 26, 38, 0.7);
             --radius: 16px;
             --radius-sm: 10px;
-            --font-display: 'Syne', sans-serif;
-            --font-body: 'DM Sans', sans-serif;
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
         }
 
         html {
@@ -577,6 +577,16 @@
             border-color: var(--border-accent);
         }
 
+        .project-card .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--border);
+            display: block;
+        }
+
         .project-header {
             display: flex;
             justify-content: space-between;
@@ -1107,13 +1117,15 @@
                 <button class="filter-btn" data-filter="platform">Plateformes</button>
                 <button class="filter-btn" data-filter="auto">Automobile</button>
                 <button class="filter-btn" data-filter="saas">SaaS</button>
-                <button class="filter-btn" data-filter="web3">Web3 / IA</button>
+                <button class="filter-btn" data-filter="logiciel">Logiciel</button>
+                <button class="filter-btn" data-filter="ia">IA</button>
             </div>
 
             <div class="projects-grid">
 
                 <!-- Inter-Car (Featured) -->
                 <div class="project-card featured reveal" data-category="auto platform">
+                    <picture><source srcset="assets/img/intercar.webp" type="image/webp"><img src="assets/img/intercar.png" alt="Inter-Car — Plateforme automobile" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">🚗</div>
                         <span class="project-tag">Phare</span>
@@ -1132,8 +1144,8 @@
                             intercar.co
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
-                        <a href="https://shop-intercar.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            Shop
+                        <a href="https://buymycar.pro" target="_blank" rel="noopener" class="project-link">
+                            buymycar.pro
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
                     </div>
@@ -1141,6 +1153,7 @@
 
                 <!-- Uber Dépannage -->
                 <div class="project-card reveal" data-category="auto platform">
+                    <picture><source srcset="assets/img/uber-depannage.webp" type="image/webp"><img src="assets/img/uber-depannage.png" alt="Uber Dépannage — Service de remorquage" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">🚨</div>
                         <span class="project-tag">Live</span>
@@ -1160,6 +1173,7 @@
 
                 <!-- InterElec -->
                 <div class="project-card reveal" data-category="platform saas">
+                    <picture><source srcset="assets/img/interelec.webp" type="image/webp"><img src="assets/img/interelec.png" alt="InterElec — Services électriques" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">⚡</div>
                         <span class="project-tag">Live</span>
@@ -1178,7 +1192,8 @@
                 </div>
 
                 <!-- TowGrab -->
-                <div class="project-card featured reveal" data-category="auto platform web3">
+                <div class="project-card featured reveal" data-category="auto platform ia">
+                    <picture><source srcset="assets/img/towgrab.webp" type="image/webp"><img src="assets/img/towgrab.png" alt="TowGrab — AI Roadside Assistance" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">🌏</div>
                         <span class="project-tag">IA</span>
@@ -1193,8 +1208,8 @@
                             towgrab.com
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
-                        <a href="https://towgrab-pro.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            TowGrab Pro
+                        <a href="https://b2b.towgrab.com" target="_blank" rel="noopener" class="project-link">
+                            b2b.towgrab.com
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
                     </div>
@@ -1202,6 +1217,7 @@
 
                 <!-- Dispax -->
                 <div class="project-card reveal" data-category="saas platform">
+                    <picture><source srcset="assets/img/dispax.webp" type="image/webp"><img src="assets/img/dispax.png" alt="Dispax — Plateforme de dispatch" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">📡</div>
                     </div>
@@ -1211,8 +1227,8 @@
                         <span>TypeScript</span><span>Next.js</span><span>WebSocket</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://dispax-lovat.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            Voir le projet
+                        <a href="https://dispax.pro" target="_blank" rel="noopener" class="project-link">
+                            dispax.pro
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
                     </div>
@@ -1220,6 +1236,7 @@
 
                 <!-- LeBonTri -->
                 <div class="project-card reveal" data-category="saas">
+                    <picture><source srcset="assets/img/lebontri.webp" type="image/webp"><img src="assets/img/lebontri.png" alt="LeBonTri — Tri des déchets intelligent" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">♻️</div>
                     </div>
@@ -1229,8 +1246,8 @@
                         <span>TypeScript</span><span>Next.js</span><span>React</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://lebontri.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            Voir le projet
+                        <a href="https://lebontri.fr" target="_blank" rel="noopener" class="project-link">
+                            lebontri.fr
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
                     </div>
@@ -1238,6 +1255,7 @@
 
                 <!-- CarBnB -->
                 <div class="project-card reveal" data-category="auto platform">
+                    <picture><source srcset="assets/img/carbnb.webp" type="image/webp"><img src="assets/img/carbnb.png" alt="CarBnB — Partage de véhicules" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">🔑</div>
                     </div>
@@ -1254,64 +1272,32 @@
                     </div>
                 </div>
 
-                <!-- Auto-Eco -->
-                <div class="project-card reveal" data-category="auto saas">
+                <!-- Vendez Ma Voiture -->
+                <div class="project-card reveal" data-category="auto platform">
+                    <picture><source srcset="assets/img/vendez-ma-voiture.webp" type="image/webp"><img src="assets/img/vendez-ma-voiture.png" alt="Vendez Ma Voiture — Vente automobile" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
-                        <div class="project-icon">🎓</div>
+                        <div class="project-icon">💰</div>
+                        <span class="project-tag">Live</span>
                     </div>
-                    <h3 class="project-name">Auto-Eco</h3>
-                    <p class="project-desc">Plateforme de gestion pour auto-écoles. Planning, suivi des élèves et gestion administrative simplifiée.</p>
+                    <h3 class="project-name">Vendez Ma Voiture</h3>
+                    <p class="project-desc">Plateforme de vente automobile entre particuliers. Estimation, mise en ligne et vente de véhicules simplifiées.</p>
                     <div class="project-tech">
-                        <span>TypeScript</span><span>Next.js</span>
+                        <span>TypeScript</span><span>React</span><span>Next.js</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://auto-eco.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            Voir le projet
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- VMV -->
-                <div class="project-card reveal" data-category="auto saas">
-                    <div class="project-header">
-                        <div class="project-icon">📊</div>
-                    </div>
-                    <h3 class="project-name">VMV</h3>
-                    <p class="project-desc">Outil de gestion de flotte automobile. Suivi, maintenance et valorisation des véhicules en temps réel.</p>
-                    <div class="project-tech">
-                        <span>TypeScript</span><span>React</span><span>Dashboard</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://vmv-psi.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            Voir le projet
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Web3 Fundraising -->
-                <div class="project-card reveal" data-category="web3">
-                    <div class="project-header">
-                        <div class="project-icon">🔗</div>
-                    </div>
-                    <h3 class="project-name">Web3 Fundraising</h3>
-                    <p class="project-desc">Plateforme de levée de fonds décentralisée sur blockchain. Smart contracts et interface intuitive pour le financement participatif.</p>
-                    <div class="project-tech">
-                        <span>TypeScript</span><span>Solidity</span><span>Web3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://web3-fundraising.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            Voir le projet
+                        <a href="https://vendez-ma-voiture.com" target="_blank" rel="noopener" class="project-link">
+                            vendez-ma-voiture.com
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- LineBot -->
-                <div class="project-card reveal" data-category="web3 saas">
+                <div class="project-card reveal" data-category="ia saas">
+                    <picture><source srcset="assets/img/linebot.webp" type="image/webp"><img src="assets/img/linebot.png" alt="LineBot — Bot LINE intelligent" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
                         <div class="project-icon">🤖</div>
+                        <span class="project-tag">Live</span>
                     </div>
                     <h3 class="project-name">LineBot</h3>
                     <p class="project-desc">Bot de messagerie LINE intelligent. Automatisation des interactions et services conversationnels pour le marché asiatique.</p>
@@ -1319,25 +1305,121 @@
                         <span>TypeScript</span><span>LINE API</span><span>Bot</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://linebot-dusky.vercel.app" target="_blank" rel="noopener" class="project-link">
-                            Voir le projet
+                        <a href="https://linebot.pro" target="_blank" rel="noopener" class="project-link">
+                            linebot.pro
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
                     </div>
                 </div>
 
-                <!-- BatiRenov -->
-                <div class="project-card reveal" data-category="platform">
+                <!-- Expert Immo -->
+                <div class="project-card reveal" data-category="logiciel platform">
+                    <picture><source srcset="assets/img/expert-immo.webp" type="image/webp"><img src="assets/img/expert-immo.png" alt="Expert Immo — Gestion immobilière" class="project-img" loading="lazy"></picture>
                     <div class="project-header">
-                        <div class="project-icon">🏗️</div>
+                        <div class="project-icon">🏠</div>
                     </div>
-                    <h3 class="project-name">BatiRenov</h3>
-                    <p class="project-desc">Plateforme de gestion pour le secteur BTP. Devis, suivi de chantier et coordination des interventions de rénovation.</p>
+                    <h3 class="project-name">Expert Immo</h3>
+                    <p class="project-desc">Logiciel de gestion immobilière. Estimation, suivi de biens et génération de rapports d'expertise pour les professionnels de l'immobilier.</p>
                     <div class="project-tech">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        <span>Python</span><span>Django</span><span>Docker</span><span>CI/CD</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/Dehem59/BatiRenov" target="_blank" rel="noopener" class="project-link">
+                        <a href="https://github.com/Dehem59/expert_immo" target="_blank" rel="noopener" class="project-link">
+                            GitHub
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Arthex Management -->
+                <div class="project-card reveal" data-category="logiciel saas">
+                    <picture><source srcset="assets/img/arthex.webp" type="image/webp"><img src="assets/img/arthex.png" alt="Arthex Management — Gestion d'entreprise" class="project-img" loading="lazy"></picture>
+                    <div class="project-header">
+                        <div class="project-icon">📋</div>
+                    </div>
+                    <h3 class="project-name">Arthex Management</h3>
+                    <p class="project-desc">Solution de gestion d'entreprise sur mesure. Pilotage d'activité, suivi de performance et tableaux de bord décisionnels.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Django</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dehem59/arthex_management" target="_blank" rel="noopener" class="project-link">
+                            GitHub
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gestion Uber -->
+                <div class="project-card reveal" data-category="logiciel auto">
+                    <picture><source srcset="assets/img/gestion-uber.webp" type="image/webp"><img src="assets/img/gestion-uber.png" alt="Gestion Uber — App chauffeurs VTC" class="project-img" loading="lazy"></picture>
+                    <div class="project-header">
+                        <div class="project-icon">🚕</div>
+                    </div>
+                    <h3 class="project-name">Gestion Uber</h3>
+                    <p class="project-desc">Application de gestion pour chauffeurs VTC. Suivi des courses, comptabilité automatisée et reporting financier.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Django</span><span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dehem59/gestion-uber" target="_blank" rel="noopener" class="project-link">
+                            GitHub
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Catalog Generator -->
+                <div class="project-card reveal" data-category="logiciel ia">
+                    <picture><source srcset="assets/img/catalog-generator.webp" type="image/webp"><img src="assets/img/catalog-generator.png" alt="Catalog Generator — Génération automatisée" class="project-img" loading="lazy"></picture>
+                    <div class="project-header">
+                        <div class="project-icon">📚</div>
+                    </div>
+                    <h3 class="project-name">Catalog Generator</h3>
+                    <p class="project-desc">Générateur automatisé de catalogues produits. Extraction de données, mise en page et export PDF pour le e-commerce.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Automatisation</span><span>PDF</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dehem59/catalog_generator" target="_blank" rel="noopener" class="project-link">
+                            GitHub
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Scraper API -->
+                <div class="project-card reveal" data-category="logiciel ia">
+                    <picture><source srcset="assets/img/scraper-api.webp" type="image/webp"><img src="assets/img/scraper-api.png" alt="Scraper API — Web scraping haute performance" class="project-img" loading="lazy"></picture>
+                    <div class="project-header">
+                        <div class="project-icon">🕷️</div>
+                    </div>
+                    <h3 class="project-name">Scraper API</h3>
+                    <p class="project-desc">API de web scraping haute performance. Extraction structurée de données à grande échelle avec gestion de proxies et rate limiting.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>FastAPI</span><span>Scraping</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dehem59/scraper-api" target="_blank" rel="noopener" class="project-link">
+                            GitHub
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SmartShare Delivery -->
+                <div class="project-card reveal" data-category="logiciel platform">
+                    <picture><source srcset="assets/img/smartshare.webp" type="image/webp"><img src="assets/img/smartshare.png" alt="SmartShare Delivery — Logistique" class="project-img" loading="lazy"></picture>
+                    <div class="project-header">
+                        <div class="project-icon">📦</div>
+                    </div>
+                    <h3 class="project-name">SmartShare Delivery</h3>
+                    <p class="project-desc">Système de gestion de livraisons et logistique. Optimisation des tournées, suivi en temps réel et gestion des chauffeurs.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Docker</span><span>GoCD</span><span>CI/CD</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Dehem59/smartshare_delivery" target="_blank" rel="noopener" class="project-link">
                             GitHub
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
                         </a>
@@ -1481,6 +1563,11 @@
                 <a href="https://interelec.fr" target="_blank" rel="noopener">InterElec</a>
                 <a href="https://intercar.co" target="_blank" rel="noopener">InterCar.co</a>
                 <a href="https://towgrab.com" target="_blank" rel="noopener">TowGrab</a>
+                <a href="https://buymycar.pro" target="_blank" rel="noopener">BuyMyCar</a>
+                <a href="https://dispax.pro" target="_blank" rel="noopener">Dispax</a>
+                <a href="https://lebontri.fr" target="_blank" rel="noopener">LeBonTri</a>
+                <a href="https://vendez-ma-voiture.com" target="_blank" rel="noopener">VMV</a>
+                <a href="https://linebot.pro" target="_blank" rel="noopener">LineBot</a>
             </div>
         </div>
     </footer>
